@@ -1,0 +1,20 @@
+@media  only screen and (max-width: 1000px)
+{
+	body{
+		overflow-x: hidden;
+	}
+	h3.text-title{
+		font-size: 32px;
+		
+	}
+	.login-box{
+		max-width: 520px;
+		width:550px;
+		
+		margin-left: -20px;
+		
+		 
+	}
+	
+}
+}

@@ -1,0 +1,117 @@
+*{
+	margin:0px;
+	padding: 0px;
+
+}
+body{
+background: #fff;
+	}
+.content{
+	position: relative;
+}
+.logo{
+	background: green;
+	opacity: 0.7;
+	width: 100%;
+	position: relative;
+	
+}
+.content .logo img{
+	width: 140px;
+
+	margin-left: 5em;
+	padding: 2em 1.2em;
+}
+.content .logo .logo-content{
+	position: absolute;
+	top: 2em;
+	left: 11em; 
+}
+.content .logo .logo-content p{
+	color: #fff;
+	font-weight: bolder;
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: 18px;
+}
+.content .logo .logo-content span{
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+}
+.dashboard-logout{
+	background: #fff;
+	position: absolute;
+	right: 40px;
+	display: block;
+	padding: 2em 5em;
+	display: flex;
+	top: 3.5em;
+	z-index: 1;
+}
+
+.dashboard,.logout{
+margin: 0 3em;
+}
+.dashboard
+{
+
+background: #999;
+color: #fff;
+padding: 0.5em 1em;
+}
+.dashboard-logout a{
+	text-decoration: none;
+	color: #555;
+	font-size: 18px;
+	text-transform: uppercase;
+	display: block;
+}
+.year{
+	margin-top: 5rem;
+	width: 100vw;
+	background: #fff;
+	padding: 10px 0;
+	float: left;
+	border: 1px solid #fff;
+	margin-left: 70px;
+	max-width: 1200px;
+	color: #888;
+}
+.year-title h4{
+	font-size: 32px;
+	font-weight: 700;
+	padding: 20px 30px;
+	color: #000;
+}
+.year h3{
+	padding: 10px 30px;
+	font-size: 18px;
+	font-weight: 400;
+}
+.year  .year-btn{
+	float: right;
+	background: green;
+	color: #fff;
+	margin-top: 2px;
+	margin-right: 60px;
+	width: 80px;
+	text-align: center;
+	padding: 20px auto;
+	border-radius: 10px;
+}
+.year .year-btn .btn{
+	font-size: 30px;
+	color: #fff;
+	
+
+	text-decoration: none;
+	text-align: center;
+}
+@media only screen and (max-width: 760px)
+{
+	.dashboard-logout{
+		margin-top: 100px;
+	}
+}

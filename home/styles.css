@@ -1,0 +1,52 @@
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;	
+}
+	body{
+overflow-x: hidden;
+	height: 100vh;
+	width: 100vw;	
+}
+.login-box{
+	
+	float: none;
+	margin-top: 110px;
+	width: 1000px;
+	margin-bottom: 5rem;
+
+}
+.login-left{
+background: rgba(211,211,211,0.5);
+padding: 30px;
+}
+.login-right{
+	padding: 30px;
+	background: #fff;
+}
+.form-control{
+	background: transparent !important;
+}
+.container-fluid{
+	width: 200%;
+	position: relative;
+}
+.flex-class{
+	background: #fff !important;
+	position:relative;
+}
+h3{
+	font-weight: 700;
+	font: sans-serif;
+	padding-top: 40px;
+	padding-bottom: 10px;
+	font-size: 40px;
+	line-height: 50px;
+	font-style: normal;
+	
+	
+}
+.logo img{
+	width: 320px; height: 200px; background: transparent; margin-top: 4vmin
+}
