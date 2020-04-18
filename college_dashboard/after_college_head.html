@@ -1,3 +1,7 @@
+<?php 
+  session_start(); 
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -49,37 +53,43 @@ background: #fff;
     padding: 0 !important;
   } 
   .navbar {   
-    background: powderblue;
+    background:  powderblue;
     padding-left: 16px;
     padding-right: 16px;
-   
     position: sticky;
   }
- 
+  .nav-link{
+    color: white;
+  }
+
 </style>
 <body >
 
-
-
-
-<center>
+<!-- <center>
 
 <div style="background-color: lightgreen; color: white; font-family: arial; text-align: center; font-size: 35px;bottom: 0px;">
 <br>
 
-<p>KWAME NKRUMAH UNIVERSITY OF SCIENCE AND TECHNOLOGY</p>
+<p>UNIVERSITY OF CAPE COAST</p>
 
 
 <br>
 
 
 </div>
-</center>
+</center> -->
 
-
-    <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color:lightgreen;color: blue;">
+    <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background-color:limegreen;color: blue;">
   <!-- Brand -->
-  <a style="font-family: arial;" class="navbar-brand" >COLLEGE HEAD</a>
+  <select>
+    <option>
+        <?php  if (isset($_SESSION['index_number'])) : ?>
+      <p style="font-family: Arial; font-size: 18px; color:green;"><strong> Welcome <?php echo $_SESSION['index_number']; ?></strong></p></option>
+      <option>Update Password</option>
+      <option>Logout</option>
+    </select>
+      <?php endif ?>
+
 
   <!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -90,13 +100,14 @@ background: #fff;
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="nav nav-pills nav-justified">
       <li class="nav-item">
-        <a class="nav-link" href="manage.php"><i class="fas fa-tasks"></i> Manage Poll </a>
+      
+        <a class="nav-link" href="#"><i class="fas fa-vote-yea"></i>+Polls</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-poll-h"></i> View Results</a>
+        <a class="nav-link" href="#"><i class="fas fa-poll"></i></i>Ongoing Poll</a>
       </li>
-          <li class="nav-item">
-        <a class="nav-link" href="index.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
+      <li class="nav-item">
+        <a class="nav-link" href="index.php"><i class="fas fa-sign-out-alt"></i> +/- Membership</a>
       </li>
     </ul>
   </div>
@@ -104,74 +115,36 @@ background: #fff;
 
 <br>
 
-
-
-    
-
-<br>
-<br>
-
 <center>
-<img src="knust.png">
-<h1 class="wel">Welcome </h1>
-
-<h1>Head</h1>
-<h1>to</h1>
-<h2>KWAME NKRUMAH UNIVERSITY OF SCIENCE AND TECHNOLOGY ELECTION</h2>
-<br>
-<hr>
-<br>
-
+<h3> Hello,
+<?php  if (isset($_SESSION['index_number'])) : ?>
+     <strong><?php echo $_SESSION['index_number']; ?></strong>
+      <?php endif ?>
+</h3>
+<h3 style="color: red;">!! Please there is no ongoing elections at the moment.. Hence the system is on lockdown.. !!</h3>
+<h3 style="color: red;"> You will be notified when there is any ongoing election </h3> 
  
 </center>
 
 
-<br>
-<br>
-<br>
-<br>
-
-</div>
 
 
-  
- 
+<!-- <footer class="bg-success justify-content-center" style="top: 0; position: relative;">
 
+<div class="footer bg-success">
 
-<footer style="background-color: lightgreen;">
-
-
-<div class="footer" style="background-color: lightgreen;">
-  
-
- 
-
-    <br>
-    <br>
-    <center>
-  <p class="foot">&copy;Copyright 2020 All rights reserved. Creativity Group. Voting System..      
-
-      </center>
-  
-  <br>
-  <br>
-  <br>
-  
+  <center>
+  <p class="foot">&copy;Copyright 2020 All rights reserved. UNIVERSITY OF CAPE COAST. Voting System..      
+</center>
     
   </p>
 
 
 
 </footer>
+ -->
 
 
-
-</div>
-
-
-
-
-  
 
  
   <!-- Bootstrap core JavaScript-->

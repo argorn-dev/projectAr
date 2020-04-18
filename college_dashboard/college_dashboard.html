@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VOTING APP: COLLEGE/DASHBOARD</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<style type="text/css">
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #FFF; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  border-right: 3px solid green;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: green;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<body>
+
+
+
+
+  <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="row justify-content-center ">
+
+  <img src="knust.png" alt="LOGO" class="img rounded" id="admin" >
+</div>
+
+
+<h5 class="bg-white text-success text-center" >KNUST COLLEGE VOTING</h5>
+  <span>
+    <div class="text-center" >
+        <h4 > College Dashboard</h4>
+        <h6 style="color: green"><i>PS/CSC/19/0092</i></h6>
+        <hr style="border-bottom: 1px solid green; margin-top:30px;" >
+      </div>
+  </span>
+  <div style="margin-left: 0px; margin-top: 10px">
+  <a href="college_log.html" target="display">Vote</a>
+  <a href="home.html" target="display">View results</a>
+  <a href="login.html" target="display">View Candidates </a>
+  <a href="#">Logout</a>
+  </div>
+</div>
+
+<!-- Use any element to open the sidenav -->
+<span onclick="openNav()">
+
+		<div class="row">
+<div style="margin-left: 15px;padding-left: 20px">
+	<img src="knust.png" alt="LOGO" class="img rounded" height="50" width="85" id="admin"  >
+	<h6>Dashboard</h6>
+</div>
+		
+		<div class="container">
+	<h1 class="bg-white text-success text-center" style="line-height: 125%">KNUST COLLEGE VOTING</h1>
+	<span>
+		<div class="text-center">
+				<h4 > College Dashboard</h4>
+				<h5 style="color: green"><i>PS/CSC/19/0092</i></h5>
+			</div>
+	</span>
+	</div>
+	</div>
+
+
+
+
+</span>
+
+
+
+
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+  <div style="margin-left: 0%; padding: 2%">
+  		<iframe width="110%" height="700" src="college_log.html" src="login.html" src="home.html" style="border-style: none;border-top: 2px solid green;" class="" name="display">	
+
+  		</iframe>
+</div>
+
+</div>
+
+<script type="text/javascript">
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "200px";
+  document.getElementById("main").style.marginLeft = "200px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+
+
+
+  </body>
+  </html>
