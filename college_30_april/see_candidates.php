@@ -7,18 +7,28 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/css/jquery.dataTables.css"/>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
 </head>
-<style type="text/css">
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function() {
+    $('.table').dataTable();
+    } );
+    </script> 
 
+    <style type="text/css" title="currentStyle">
+        @import "/media/css/jquery.dataTables.css";
+    </style>
 
-</style>
 <body>
 
 <div class="container">
 
-<h6 style="color: green;" >Use the Dashboard to continue Navigation</h6>
+<h6 style="color: green;" >Use the Dashboard to continue Navigation..</h6>
 <br>
-<h4 style="color: green;" >Candidates</h4>
+<h5 style="color: green;" >Candidates</h5>
 <?php
 
 
@@ -31,8 +41,9 @@ $db = mysqli_connect('localhost', 'root', '', 'data');
 $results =$db->query ("SELECT * FROM add_can");
 ?>
 
-<div class="row justify-content-center " style="font-size: 14px">
-<table class="table">
+<div class="row justify-content-center " style="font-size: 14px;" >
+<div class="table-responsive">
+<table class="table table">
   <thead>
     <tr>
     <th>Id</th>
@@ -41,8 +52,8 @@ $results =$db->query ("SELECT * FROM add_can");
       <th>E-mail Address</th>
       <th>Short Biography</th>
       <th>Image</th>
-      <th colspan="2">Action</th>
-    </tr>
+      <!-- <th colspan="2">Action</th>
+    </tr> -->
   </thead>
  
 
@@ -59,15 +70,15 @@ while ($row = $results->fetch_assoc()):
   <td><?php echo $row['biography']; ?></td>
   <td>
   	<?php
-		echo '<img src="data:image/png;base64,'.base64_encode( $row['image'] ).'" width="50" height = "50"/>'
+		echo '<img src="data:image/png;base64,'.base64_encode( $row['image'] ).'" width="60" height = "60"/>'
    	; ?>
    	</td>
-  <td>
+  <!-- <td>
     <a href="create_poll.php?edit= <?php echo $row['id']; ?>"
     class = "btn btn-info" >Edit</a>
      <a href="process.php?delete = <?php echo $row['id']; ?>"
     class = "btn btn-danger" >Delete</a>
-  </td>
+  </td> -->
 </tr>
 
 <?php
@@ -87,6 +98,7 @@ function pre_r ($array){
 
 ?>
 </table>
+</div>
 </div>
 </div>
 

@@ -119,37 +119,44 @@
       </div>
   </span>
   <div style="margin-left: 0px; margin-top: 10px">
-  <button class="dropdown-btn">Polls
+  <button class="dropdown-btn"><i class="far fa-hand-point-right"></i> Polls
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
-    <a href="create_candidate.php" target="display">* Create a Poll</a>
-    <a href="manage_poll.html" target="display">* Manage Poll</a>
+    <a href="create_poll.html" target="display"><i class="fas fa-angle-right"></i> Create a Poll</a>
+    <a href="manage_poll.php" target="display"><i class="fas fa-angle-right"></i> Manage Poll</a>
       <hr style="border-bottom: 1px solid green; margin-top:30px; margin-right: 5px;  margin-left: 5px" >
 
     
   </div>
 
-  <a href="on_going_poll.html" target="display"> Ongoing Poll</a>
+  <a href="on_going_poll.html" target="display"><i class="far fa-hand-point-right"></i> Ongoing Poll</a>
 
-  <button class="dropdown-btn"> Membership
+  <button class="dropdown-btn"><i class="far fa-hand-point-right"></i> Membership
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
     
-    <button class="dropdown-btn">* +/-Students
+    <button class="dropdown-btn"><i class="fas fa-angle-right"></i> +/-Students
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
     <a href="import_students.php" target="display"><button class="btn btn-info" style="margin-left:2px ; margin-top: 10px; ">Import students
    
   </button></a>
-    <a href="Students.html" target="display">** +Student</a>
-    <a href="view_students.php" target="display">**View Students</a>
+    <a href="students.php" target="display"><i class="fas fa-angle-double-right"></i> +Student</a>
+    <a href="view_students.php" target="display"><i class="fas fa-angle-double-right"></i>View Students</a>
+    <a href="edit_delete.php" target=display><i class="fas fa-angle-double-right"></i>Edit/Delete</a>
+
+
+    <a href="#" target="display"><button class="btn btn-danger" style="margin-left:2px ; margin-top: 10px; ">Clear Student's Database
+    </button></a>
       <hr style="border-bottom: 1px solid green; margin-top:30px; margin-right: 5px;  margin-left: 5px" >
 
+    
+ 
   </div>
-    <a href="see_candidates.php" target="display">* See Candidates</a>
+    <a href="see_candidates.php" target="display"><i class="fas fa-angle-right"></i> See Candidates</a>
     
   </div>
   

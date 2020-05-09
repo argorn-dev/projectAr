@@ -20,6 +20,12 @@
     <h2>Register Candidate</h2>
   </div>  
   <br>
+<div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+               
+        </div>
+    </div>
+  
   <div class="row justify-content-center ">
     <img src="knust.png" alt="LOGO" class="img rounded" id="admin" >
   </div>
@@ -27,7 +33,7 @@
  <br> 
  
 <div class="form-group">
-      <center><div class="error"><?php include('errors.php'); ?></div>
+      <center><div class="error"><?php include('errors.php'); ?></div></center>
 
         <label>Enter Candidate's name</label>
       <center>

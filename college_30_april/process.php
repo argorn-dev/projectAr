@@ -67,7 +67,12 @@ if (isset($_POST['save'])) {
 
 
     header('location: create_candidate.php');
-    echo "<script type='text/javascript'>alert('A candidate has been successfully signed in..');</script>";
+   
+   $result='<div class="alert alert-success">Thank You! I will be in touch</div>';
+}else {
+    $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
+
+
   }
   
 }
@@ -86,3 +91,6 @@ if (isset($_GET['delete'])) {
 
 
 ?>
+
+
+
