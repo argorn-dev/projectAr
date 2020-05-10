@@ -1,2 +1,2 @@
-s# projectAr
+# projectAr
 College Voting
