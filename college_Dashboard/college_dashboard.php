@@ -198,7 +198,7 @@
 <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
 <div id="main">
   <div style="margin-left: 0%; padding: 2%">
-  		<iframe width="100%" height="700" src="welcome.html" src="login.html" src="change_password.php" src="home.html" style="border-style: none;border-top: 2px solid green;" class="" name="display">	
+  		<iframe width="100%" height="700" src="login.html" src="welcome.html"  src="change_password.php" src="home.html" style="border-style: none;border-top: 2px solid green;" class="" name="display">	
 
   		</iframe>
 </div>
